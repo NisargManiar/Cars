@@ -1,4 +1,5 @@
-
+*.wsuo
+*.sln
 *.swp
 *.*~
 project.lock.json
