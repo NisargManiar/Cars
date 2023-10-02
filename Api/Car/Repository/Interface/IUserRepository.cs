@@ -4,7 +4,7 @@ namespace Car.Repository.Interface
 {
     public interface IUserRepository
     {
-        Task<User> Regitestion(User user);
-        Task<User> Login(string username ,string Password);
+        Task<Users> Regitestion(Users users);
+        Task<Users> Login(string username ,string Password);
     }
 }
