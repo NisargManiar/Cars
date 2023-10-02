@@ -9,9 +9,9 @@ namespace Car
         {
         }
 
-        public DbSet<Cars> Carsed { get; set; }
+        public DbSet<Cars> Cars { get; set; }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Users> Users { get; set; }
 
     }
 }

@@ -4,10 +4,10 @@ namespace Car.Repository.Interface
 {
     public interface ICarsRepository
     {
-        Task<Cars> GetCars();
-        Task<Cars> GetCarsSingle(int carId);
-        Task<Cars> CreateCars(Cars cars);
+        Task<IEnumerable<Cars>> GetCars();
+        Task<Cars> GetCarsById(int carId);
+        Task<Cars> InsertCars(Cars cars);
         Task<Cars> UpdateCars(Cars cars);
-        Task<Cars> DeleteCars(int carId);
+        bool DeleteCars(int carId);
     }
 }

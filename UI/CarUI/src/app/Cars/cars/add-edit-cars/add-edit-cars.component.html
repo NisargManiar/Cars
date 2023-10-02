@@ -1,0 +1,32 @@
+<div class="d-flex flex-row bd-highlight mb-9">
+    <div class="p-2 w-100 bd-highlight">
+  
+      <div class="input-group mb-12">
+        <span class="input-group-text">Brand</span>
+        <input type="text" class="form-control" [(ngModel)]="Brand">
+      </div>
+      <div class="input-group mb-12">
+        <span class="input-group-text">Model</span>
+        <input type="text" class="form-control" [(ngModel)]="Model">
+      </div>
+      <div class="input-group mb-12">
+        <span class="input-group-text">Year</span>
+        <input type="text" class="form-control" [(ngModel)]="Year">
+      </div>
+      <div class="input-group mb-12">
+        <span class="input-group-text">Price</span>
+        <input type="text" class="form-control" [(ngModel)]="Price">
+      </div>
+      <div class="input-group mb-12">
+        <span class="input-group-text">New</span>
+        <input type="text" class="form-control" [(ngModel)]="New">
+      </div>
+    </div>
+  </div>
+  <button (click)="addCars()" *ngIf="Cars.CarsId == '0'" class="btn btn-primary">
+    Add
+  </button>
+  
+  <button (click)="updateCars()" *ngIf="Cars.CarsId !='0'" class="btn btn-primary">
+    Update
+  </button>
